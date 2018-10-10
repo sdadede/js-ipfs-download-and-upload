@@ -1,4 +1,4 @@
-#使用vue.js利用ipfs实现文件的上传下载#
+#使用vue.js利用ipfs实现文件的上传下载
 
 星际文件系统（InterPlanetary File System，缩写IPFS）是一个旨在创建持久且分布式存储和共享文件的网络传输协议。
 
@@ -9,7 +9,7 @@ ipfs官网提供有ipfs-api，让web端也能够调用ipfs的api
 ```npm install ipfs-api```
 
 说一下基础的ipfs配置步骤：
-##1.安装ipfs本地节点##
+##1.安装ipfs本地节点
 去官网[下载][1]
 [1]:https://dist.ipfs.io/#go-ipfs
 
@@ -51,7 +51,7 @@ ipfs官网提供有ipfs-api，让web端也能够调用ipfs的api
 
 ```ipfs daemon```
 
-##2.开始vue项目##
+##2.开始vue项目
 
 vue先安装一下依赖包
 
@@ -63,7 +63,7 @@ vue先安装一下依赖包
 
 ```import ipfsAPI from 'ipfs-api'```
 
-####获取文件###
+####获取文件
 
 
 
@@ -80,7 +80,7 @@ vue先安装一下依赖包
       })
     },
 
-###下载文件###
+###下载文件
 
 	downImageOnIpfs (hash) {
       return new Promise((resolve, reject) => {
